@@ -1,9 +1,9 @@
 # Parameter Mapping for Dynamical Systems
-Source:  Metody analýzy nelineárních dynamických modelů, prof. Milan Kubíček
-Sumarized by Dr. Martin Kohout
+Source:  Metody analýzy nelineárních dynamických modelů, prof. Milan Kubíček\
+Sumarized by Dr. Martin Kohout\
 
 # Definition of the problem - CSTR1EXO
-The CSTR1EXO model represents an ideal continuously stirred tank reactor (CSTR) with a non-isothermal (exothermic) first-order reaction and recycle. The reactor is schematically illustrated in the figure below:
+The CSTR1EXO model represents an ideal continuously stirred tank reactor (CSTR) with a non-isothermal (exothermic) first-order reaction and recycle. The reactor is schematically illustrated in the figure below:\
 ![CSTR1EXO](image.png)
 
 The reaction mixture enters the reactor with a volumetric flow rate F0, input concentration cA0​, and input temperature T0​. Similarly, the volumetric flow F, the concentration of the key component cA​, and temperature T at the output are described. Material and energy balances can be written in the following form:\
