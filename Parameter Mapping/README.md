@@ -57,10 +57,10 @@ where E = exp⁡(θ / (1 + θ/γ)).
 
 ## Properties of Eigenvalues:
 Based on the values of the eigenvalues λ_1,2​, we can classify the following types of steady states:
--Stable node - λ1,λ2​ are negative real numbers.
--Stable focus - λ_1,2​ are complex conjugate numbers with negative real parts.
--Hyperbolic saddle - λ_1 and λ_2​ are real numbers, one positive and one negative.
--Unstable node - λ_1 and λ_2​ are positive real numbers.
--Unstable focus - λ_1,2​ are complex conjugate numbers with positive real parts.
+- Stable node - λ1,λ2​ are negative real numbers.
+- Stable focus - λ_1,2​ are complex conjugate numbers with negative real parts.
+- Hyperbolic saddle - λ_1 and λ_2​ are real numbers, one positive and one negative.
+- Unstable node - λ_1 and λ_2​ are positive real numbers.
+- Unstable focus - λ_1,2​ are complex conjugate numbers with positive real parts.
 
 ![Animation by Jan Cincibuch](animation.mp4)
