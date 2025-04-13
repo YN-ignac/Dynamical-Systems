@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 
 data = np.loadtxt("C:\Fortran projects\Dynamical-Systems\Parameter Mapping\output.txt")
 stable_data = np.loadtxt("C:\Fortran projects\Dynamical-Systems\Parameter Mapping\output_stable.txt")

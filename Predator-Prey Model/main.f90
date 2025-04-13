@@ -3,8 +3,8 @@ program LotkaVolterra
 
     ! Declare variables
     integer, parameter :: neq = 2
-    real(8), parameter :: tbeg = 0.0        ! Start of integration, s
-    real(8), parameter :: tend = 3600       ! End of integration, s
+    real(8), parameter :: tbeg = 0.0           ! Start of integration, s
+    real(8), parameter :: tend = 100           ! End of integration, s
     real(8), parameter :: tstep = 1.0d-3       ! Time step 
     integer, parameter :: Nsteps = int((tend-tbeg)/tstep)+1 ! Nubmer of calls to LSODE
 
@@ -150,8 +150,8 @@ subroutine JAC (NEQ, T, Y, ML, MU, PD, NROWPD)
     yout(:, 1) = y(:)
 
     ! Set up LSODE
-    t      = tbeg * 3.6d3   ! Integration start, seconds
-    tout   = (tbeg + tstep) * 3.6d3   ! Integration end, seconds
+    t      = tbeg           ! Integration start, seconds
+    tout   = (tbeg + tstep) ! Integration end, seconds
     itol   = 1              ! ATOL is a scalar
     rtol   = 1.0d-5         ! Relative tolerance
     atol   = 1.0d-9         ! Absolute tolerance
@@ -170,7 +170,7 @@ subroutine JAC (NEQ, T, Y, ML, MU, PD, NROWPD)
                     ISTATE, IOPT, RWORK, LRW, IWORK, LIW, JAC, MF)
         istate = 2              ! Next call to LSODE is subsequent
         ! Update TOUT
-        tout = t + tstep * 3.6d3
+        tout = t + tstep
         ! Store current point of solution
         yout(:,i) = y(:)
     end do
@@ -194,6 +194,11 @@ subroutine model_output(neq, Nsteps, tstep, yout)
     integer :: i                    ! Loop variable
 
     ! Output results to the console
+    print *, 'Time (s)', 'Prey', 'Predator'
+    do i = 1, Nsteps
+        print *, i*tstep, yout(1,i), yout(2,i)
+    end do
+
     open(10, file='output.txt')
     do i = 1, Nsteps
         write(10,*) i*tstep, yout(1,i), yout(2,i)
