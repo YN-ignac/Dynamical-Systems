@@ -23,7 +23,7 @@ beta_lp = data_lp[:, 3]
 plt.figure()
 plt.plot(Da_hopf, beta_hopf, lw=3, color='blue', label='Hopfova bifurkácia')
 plt.plot(Da_lp, beta_lp, lw=3, color='red', label='Limitné body', ls='--')
-plt.title('Bifurkačný diagram - body Hopfovej bifurkácie a limitné body')
+plt.title('Bifurkačný diagram - body Hopfovej bifurkácie \n a limitné body')
 plt.xlabel('Damköhlerovo kriterium')
 plt.ylabel('Beta')
 plt.grid(True)

@@ -43,8 +43,8 @@ plt.savefig("conversion_vs_damkohler.pdf", format="pdf", dpi=300)
 
 # Plot the eigen values graph
 plt.figure()
-plt.scatter(eigRe1, eigIm1, marker='o', color='green', label='Vlastné číslo 1')
-plt.scatter(eigRe2, eigIm2, marker='o', color='orange', label='Vlastné číslo 2')
+plt.scatter(eigRe1, eigIm1, marker='o', color='green', label='Vlastné číslo 1', s=35)
+plt.scatter(eigRe2, eigIm2, marker='o', color='orange', label='Vlastné číslo 2', s=35)
 plt.axvline(x=0, color='black', linestyle='--', linewidth=3)
 plt.xlabel('Realmarna časť')
 plt.ylabel('Imaginárna časť')
