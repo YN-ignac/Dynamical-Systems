@@ -1,1 +1,0 @@
-gfortran -o kontinuaceHB.exe gauss.f90 main.f90
