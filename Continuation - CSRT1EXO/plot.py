@@ -22,7 +22,7 @@ plt.xlabel('Damköhlerovo kriterium')
 plt.ylabel('Konverzia')
 plt.grid(True)
 # Save the first graph as a high-resolution PDF
-plt.savefig("continuation.pdf", format="pdf", dpi=300)
+plt.savefig("C:\\Fortran projects\\Dynamical-Systems\\Exported figures\\continuation.pdf", format="pdf", dpi=300)
 
 plt.figure()
 plt.plot(theta, X, lw='2')

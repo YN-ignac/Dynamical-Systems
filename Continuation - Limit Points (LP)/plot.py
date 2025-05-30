@@ -24,6 +24,6 @@ plt.xlabel('Damköhlerovo kriterium')
 plt.ylabel('Beta')
 plt.grid(True)
 # Save the first graph as a high-resolution PDF
-plt.savefig("limit_points.pdf", format="pdf", dpi=300)
+plt.savefig("C:\\Fortran projects\\Dynamical-Systems\\Exported figures\\limit_points.pdf", format="pdf", dpi=300)
 
 plt.show()

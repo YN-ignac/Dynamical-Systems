@@ -29,7 +29,7 @@ plt.ylabel('Beta')
 plt.grid(True)
 plt.legend()
 # Save the combined graph as a high-resolution PDF
-plt.savefig("combined_bifurcation.pdf", format="pdf", dpi=300)
+plt.savefig("C:\\Fortran projects\\Dynamical-Systems\\Exported figures\\combined_bifurcation.pdf", format="pdf", dpi=300)
 plt.show()
 
 plt.figure()
@@ -39,6 +39,6 @@ plt.xlabel('Damköhlerovo kriterium')
 plt.ylabel('Beta')
 plt.grid(True)
 # Save the first graph as a high-resolution PDF
-plt.savefig("hopf.pdf", format="pdf", dpi=300)
+plt.savefig("C:\\Fortran projects\\Dynamical-Systems\\Exported figures\\hopf.pdf", format="pdf", dpi=300)
 plt.show()
 

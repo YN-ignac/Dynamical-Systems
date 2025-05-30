@@ -50,5 +50,5 @@ ax2.set_ylabel("osa y")
 ax2.grid(True)
 
 plt.tight_layout()
-plt.savefig("poincare_f2.pdf", format="pdf", dpi=500, bbox_inches='tight')
+plt.savefig("C:\\Fortran projects\\Dynamical-Systems\\Exported figures\\poincare_f2.pdf", format="pdf", dpi=500, bbox_inches='tight')
 plt.show()
